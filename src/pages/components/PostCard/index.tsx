@@ -1,11 +1,4 @@
-import {
-  SetStateAction,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import { useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { PostResponseType } from '../../../service/types/postResponse.type';
 
 import Swal from 'sweetalert2';
@@ -14,7 +7,7 @@ import { AiFillDelete, AiFillEdit } from 'react-icons/ai';
 
 import AppContext from '../../../context/AppContext';
 import PostsService from '../../../service/PostsService';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import AuthService from '../../../service/AuthService';
 import TostifyService from '../../../service/TostifyService';
 
